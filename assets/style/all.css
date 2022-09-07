@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 去除圖片底部留白 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+*, *::before, *::after {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* 系統預設字體 */
+body {
+  font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif; }
+
+/* header區域 */
+header {
+  background: #AA0601;
+  padding: 16px 0; }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 12px; }
+  header img {
+    width: 80px; }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header ul li {
+      margin-right: 64px; }
+      header ul li:last-child {
+        margin-right: 0px; }
+      header ul li a:hover {
+        border-bottom: 2px solid #fff; }
+  header a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px; }
+  header .burger-menu {
+    color: #fff;
+    cursor: pointer;
+    display: none; }
+
+/* footer區域 */
+footer {
+  background: #AA0601;
+  color: #fff;
+  padding-top: 60.2px;
+  padding-bottom: 32px; }
+  footer a {
+    color: #fff; }
+  footer .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 32px;
+    margin-bottom: 32px; }
+  footer .footer-above {
+    text-align: left; }
+  footer .footer-nav {
+    margin-bottom: 36px; }
+    footer .footer-nav a {
+      margin-right: 48px; }
+      footer .footer-nav a:last-child {
+        margin-right: 0px; }
+      footer .footer-nav a:hover {
+        border-bottom: 2px solid #fff; }
+  footer .footer-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .footer-contact span {
+      font-size: 48px; }
+    footer .footer-contact a {
+      font-size: 36px;
+      line-height: 54px;
+      margin-left: 16px; }
+      footer .footer-contact a:hover {
+        border-bottom: 2px solid #fff; }
+  footer .footer-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .footer-icons li {
+      margin-left: 32px; }
+      footer .footer-icons li:first-child {
+        margin-left: 0px; }
+    footer .footer-icons img {
+      width: 48px;
+      height: 48px; }
+  footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .copyright p {
+      font-size: 16px;
+      line-height: 24px; }
+    footer .copyright .terms {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 14px;
+      line-height: 21px; }
+      footer .copyright .terms a {
+        margin-left: 48px; }
+        footer .copyright .terms a:hover {
+          border-bottom: 2px solid #fff; }
+
+/* 桌機 (1110 + 30 gutter) */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+/* 平板 (690 + 30 gutter) */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 24px; }
+  footer {
+    padding: 0; }
+    footer .container {
+      padding: 56.2px 36px 40px 36px; }
+    footer .footer-icons li {
+      margin-left: 16px; }
+      footer .footer-icons li:first-child {
+        margin-left: 0px; }
+    footer .footer-icons img {
+      width: 40px;
+      height: 40px; } }
+
+/* 手機 (345 + 30 gutter) */
+@media (max-width: 375px) {
+  header {
+    padding: 0; }
+    header .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0; }
+      header .container img {
+        margin-top: 12px;
+        margin-bottom: 12px; }
+    header .headr-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      header .headr-nav li {
+        margin: 0;
+        border: 1px solid #fff;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 51px;
+        padding-right: 52px; }
+        header .headr-nav li:nth-child(3) {
+          padding-left: 61px;
+          padding-right: 62px; }
+    header a {
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 30px; }
+      header a:hover {
+        color: #AA0601;
+        background-color: #fff; }
+  footer .container {
+    width: 92%;
+    padding: 24px 0; }
+    footer .container .footer-content {
+      padding-bottom: 24px;
+      margin-bottom: 16px; }
+  footer .footer-above {
+    padding-top: 0; }
+  footer .footer-nav {
+    display: none; }
+  footer .footer-contact span {
+    font-size: 18px; }
+  footer .footer-contact a {
+    font-size: 16px;
+    line-height: 24px; }
+  footer .footer-icons {
+    width: 26%; }
+    footer .footer-icons img {
+      width: 24px;
+      height: 24px; }
+  footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left; }
+    footer .copyright .terms {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      footer .copyright .terms a {
+        margin-left: 0;
+        margin-top: 8px; } }
+
+/*# sourceMappingURL=all.css.map */
