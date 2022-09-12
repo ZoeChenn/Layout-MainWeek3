@@ -1,0 +1,30 @@
+.FAQ {
+  .container {
+    margin: 96px auto 80px auto;
+    @include pad() {
+      width: calc(100% - 36px);
+    }
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 72px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 32px auto 24px auto;
+  }
+  .question {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+  .answer {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+}
